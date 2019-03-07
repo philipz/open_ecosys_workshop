@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  web1:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    deploy:
+      replicas: 3
