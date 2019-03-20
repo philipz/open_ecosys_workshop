@@ -2,7 +2,7 @@ server {
     listen 80;
 
     location / {
-	resolver 127.0.0.11 [::11];
+	resolver 127.0.0.11 [::11] valid=10s;
 	set $target http://wordpress;
 	proxy_pass $target;
 	proxy_set_header Host $host;
