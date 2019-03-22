@@ -1,0 +1,3 @@
+FROM wordpress:latest
+ENV WORDPRESS_DB_HOST db:3306
+ENV WORDPRESS_DB_PASSWORD wordpress
